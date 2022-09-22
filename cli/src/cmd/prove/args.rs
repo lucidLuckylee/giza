@@ -32,6 +32,8 @@ pub struct ProveArgs {
     )]
     pub output: PathBuf,
 
+    //TODO: flag/path for json-output
+
     #[clap(help = "Number of serialized outputs", long)]
     pub num_outputs: Option<u64>,
 

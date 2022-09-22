@@ -38,6 +38,7 @@ impl Cmd for ProveArgs {
             input_bytes,
             proof_bytes,
         };
+        //TODO: output proof as json
         let b = bincode::serialize(&data).unwrap();
         let mut f = File::create(self.output).unwrap();
         f.write_all(&b).unwrap();
